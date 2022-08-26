@@ -123,10 +123,10 @@ export default function PricingTable() {
               <span className="mover-check"></span>
             </li>
             <li>
-              <span className="mover-check"></span>
+              <span className="mover-check none"></span>
             </li>
             <li>
-              <span className="mover-check"></span>
+              <span className="mover-check none"></span>
             </li>
           </ul>
           <ul className="sell-shaker-list">
@@ -185,16 +185,16 @@ export default function PricingTable() {
               <span className="mover-check"></span>
             </li>
             <li>
-              <span className="mover-check"></span>
+              <span className="mover-check none"></span>
             </li>
             <li>
-              <span className="mover-check"></span>
+              <span className="mover-check none"></span>
             </li>
             <li>
-              <span className="mover-check"></span>
+              <span className="mover-check none"></span>
             </li>
             <li>
-              <span className="mover-check"></span>
+              <span className="mover-check none"></span>
             </li>
           </ul>
           <ul className="market-shaker-list">
@@ -286,36 +286,36 @@ export default function PricingTable() {
           </ul>
           <ul className="sell-mover-list">
             <li>
-              <span className="mover-check"></span>
+              <span className="mover-check none"></span>
             </li>
             <li>
-              <span className="mover-check"></span>
+              <span className="mover-check none"></span>
             </li>
             <li>
-              <span className="mover-check"></span>
+              <span className="mover-check none"></span>
             </li>
             <li>
-              <span className="mover-check"></span>
+              <span className="mover-check none"></span>
             </li>
             <li>
-              <span className="mover-check"></span>
+              <span className="mover-check none"></span>
             </li>
           </ul>
           <ul className="sell-shaker-list">
             <li>
-              <span className="shaker-check"></span>
+              <span className="shaker-check none"></span>
             </li>
             <li>
-              <span className="shaker-check"></span>
+              <span className="shaker-check none"></span>
             </li>
             <li>
-              <span className="shaker-check"></span>
+              <span className="shaker-check none"></span>
             </li>
             <li>
-              <span className="shaker-check"></span>
+              <span className="shaker-check none"></span>
             </li>
             <li>
-              <span className="shaker-check"></span>
+              <span className="shaker-check none"></span>
             </li>
           </ul>
           <ul className="sell-earthquake-list">

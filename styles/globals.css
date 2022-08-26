@@ -283,6 +283,7 @@ input {
 section {
   margin: var(--v-spacing) 0;
   padding: 0;
+  background-color: inherit;
 }
 
 /* @media (max-width: 120em) {
