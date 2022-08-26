@@ -1,26 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
 }
-
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --clr-black: 24, 11%, 9%;
+  --clr-white: 0, 0%, 100%;
+  --clr-light: 30, 50%, 98%;
+  --clr-blue: 194, 98%, 32%;
+  --clr-brown: 36, 99%, 33%;
+  --clr-purple: 255, 61%, 42%;
+
+  /* font-families */
+  --ff-primary: "Inter", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
+
+  /* font-sizes */
+  --font-size-xl: 2.77rem;
+  --font-size-l: 1.8rem;
+  --font-size-m: 1.2rem;
+  --font-size-s: 1.1rem;
+  --font-size-xs: 1rem;
+  --font-size-xxs: 0.83rem;
+  --font-size-tiny: 0.77rem;
+  --font-size-menu: 0.6666rem;
+  --font-size-card-title: 1.1rem;
+
+  /* spacing */
+  --maxwidth: 70.22rem;
+  --h-spacing: 1.1em;
+  --v-spacing: 3.56em;
+  --container-spacing-v: 1.1em;
+  --container-spacing-h: 1.1em;
+  --container-spacing-v-l: 1.3em;
+  --container-spacing-h-l: 1.3em;
+  --spacing-xxl: 6.67em;
+  --spacing-xl: 3.56em;
+  --spacing-l: 2.44em;
+  --spacing-m: 1.77em;
+  --spacing-s: 1.33em;
+  --spacing-s-2: 1.11em;
+  --spacing-xs: 0.88em;
+  --spacing-xxs: 0.66em;
+  --spacing-tiny: 0.44em;
+
+  --animate-duration: 350ms;
+  --animate-delay: 350ms;
+  --animate-repeat: 1;
+}
+
+@media (min-width: 26.3125em) {
+  :root {
+    --font-size-xl: calc(50px + 14 * ((100vw - 421px) / 859));
+    --font-size-l: calc(34px + 10 * ((100vw - 421px) / 859));
+    --font-size-m: calc(22px + 10 * ((100vw - 421px) / 859));
+    --font-size-s: calc(20px + 2 * ((100vw - 421px) / 859));
+    --font-size-menu: calc(12px + 6 * ((100vw - 421px) / 859));
+  }
+}
+
+@media (min-width: 48.0625em) {
+  :root {
+    --h-spacing: 2.22em;
+    --v-spacing: 6em;
+    --container-spacing-v: 1.77em;
+    --container-spacing-h: 1.77em;
+    --container-spacing-v-l: 2.44em;
+    --container-spacing-h-l: 2.44em;
+
+    --font-size-card-title: calc(15px + 5 * ((100vw - 769px) / 511));
+    --font-size-card-button: calc(15px + 3 * ((100vw - 769px) / 511));
+  }
+}
+@media (min-width: 64.0625em) {
+  :root {
+    --h-spacing: 4.88em;
+    --container-spacing-v: 2.22em;
+    --container-spacing-h: 2.22em;
+    --container-spacing-v-l: 3.55em;
+    --container-spacing-h-l: 3.55em;
+  }
+}
+
+@media (min-width: 80em) {
+  :root {
+    --font-size-xl: 3.55rem;
+    --font-size-l: 2.44rem;
+    --font-size-m: 1.77rem;
+    --font-size-s: 1.22rem;
+    --font-size-card-title: 1.22rem;
+    --font-size-menu: 1rem;
+  }
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+li,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
-    color: white;
-    background: black;
+    color: hsl(var(--clr-white));
+    background: hsl(var(--clr-black));
   }
+}
+
+/* Typography */
+
+h1 {
+  line-height: 1;
+  letter-spacing: 2.2px;
+  font-size: var(--fs-xl);
+  font-family: var(--ff-secondary);
+  font-weight: 600;
+}
+
+h2 {
+  line-height: 1;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: var(--fs-l);
+  font-family: var(--ff-secondary);
+}
+h3 {
+  line-height: 1;
+  letter-spacing: 2.2px;
+  font-size: var(--fs-m);
+  font-family: var(--ff-secondary);
+  font-weight: 500;
+}
+h4 {
+  line-height: 1;
+  letter-spacing: 2.2px;
+  font-size: var(--fs-s);
+  font-family: var(--ff-secondary);
+  font-weight: 500;
+}
+p {
+  font-size: var(--fs-body);
+  font-family: var(--ff-xs);
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+li {
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  line-height: 25px;
+  font-family: var(--ff-xs);
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--font-size-xs);
+  line-height: 1.5;
+  color: hsl(var(--clr-black));
+  background-color: var(--clr-white);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: hsl(var(--clr-black));
+  text-decoration: none;
+  font-size: var(--fs-nav-links);
+  font-family: var(--ff-primary);
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  line-height: 24.5px;
+}
+input {
+  font-size: var(--fs-td-number);
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+
+.btn {
+  font-size: var(--fs-body);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-tiny);
+  padding: var(--spacing-s-2) var(--spacing-s);
+  color: hsl(var(--clr-white));
+  border: 1px solid hsl(var(--clr-black));
+  background-color: hsl(var(--clr-black));
+  transition: opacity var(--animate-duration) ease-in-out var(--animate-delay),
+    background-color var(--animate-duration) ease-in-out var(--animate-delay),
+    color var(--animate-duration) ease-in-out var(--animate-delay);
+  letter-spacing: 1px;
+  line-height: 1.71;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+}
+
+@media screen and (min-width: 500px) {
+  .btn {
+    align-self: unset;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--maxwidth);
+  padding: 0 var(--h-spacing);
+}
+section {
+  padding: 0;
+}
+
+/* @media (max-width: 120em) {
+  section {
+    margin: var(--v-spacing) 0;
+  }
+}
+
+@media (min-width: 33.25em) {
+  section {
+    margin: var(--v-spacing) 0;
+  }
+}
+
+@media (min-width: 48em) {
+  section {
+    margin: var(--v-spacing) 0;
+  }
+}
+
+@media (min-width: 62em) {
+  section {
+    margin: var(--v-spacing) 0;
+  }
+}
+
+@media (min-width: 90em) {
+  section {
+    margin: var(--v-spacing) 0;
+  }
+}
+
+@media (min-width: 120em) {
+  section {
+    margin: var(--v-spacing) 0;
+  }
+} */
+
+main {
+  padding-top: 6rem;
 }
