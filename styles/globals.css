@@ -16,22 +16,23 @@ html {
 
 :root {
   /* colors */
-  --clr-black: 24, 11%, 9%;
-  --clr-white: 0, 0%, 100%;
-  --clr-light: 30, 50%, 98%;
-  --clr-blue: 194, 98%, 32%;
-  --clr-brown: 36, 99%, 33%;
-  --clr-purple: 255, 61%, 42%;
+  --clr-black: 24 11% 9%;
+  --clr-grey: 20 3% 35%;
+  --clr-white: 0 0% 100%;
+  --clr-light: 30 50% 98%;
+  --clr-blue: 194 98% 32%;
+  --clr-brown: 36 99% 33%;
+  --clr-purple: 255 61% 42%;
 
   /* font-families */
   --ff-primary: "Inter", sans-serif;
   --ff-secondary: "Poppins", sans-serif;
 
   /* font-sizes */
-  --font-size-xl: 2.77rem;
-  --font-size-l: 1.8rem;
-  --font-size-m: 1.2rem;
-  --font-size-s: 1.1rem;
+  --font-size-xl: 3rem;
+  --font-size-l: 2.2rem;
+  --font-size-m: 1.75rem;
+  --font-size-s: 1.45rem;
   --font-size-xs: 1rem;
   --font-size-xxs: 0.83rem;
   --font-size-tiny: 0.77rem;
@@ -179,9 +180,9 @@ select {
 /* Typography */
 
 h1 {
-  line-height: 1;
-  letter-spacing: 2.2px;
-  font-size: var(--fs-xl);
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  font-size: var(--font-size-xl);
   font-family: var(--ff-secondary);
   font-weight: 600;
 }
@@ -190,26 +191,25 @@ h2 {
   line-height: 1;
   letter-spacing: 2px;
   font-weight: 600;
-  font-size: var(--fs-l);
+  font-size: var(--font-size-l);
   font-family: var(--ff-secondary);
 }
 h3 {
-  line-height: 1;
+  line-height: 1.75;
   letter-spacing: 2.2px;
-  font-size: var(--fs-m);
+  font-size: var(--font-size-m);
   font-family: var(--ff-secondary);
   font-weight: 500;
 }
 h4 {
   line-height: 1;
   letter-spacing: 2.2px;
-  font-size: var(--fs-s);
+  font-size: var(--font-size-s);
   font-family: var(--ff-secondary);
   font-weight: 500;
 }
 p {
-  font-size: var(--fs-body);
-  font-family: var(--ff-xs);
+  font-family: var(--ff-primary);
   font-weight: 400;
   letter-spacing: normal;
 }
@@ -217,8 +217,7 @@ p {
 li {
   font-weight: 500;
   letter-spacing: 1.4px;
-  line-height: 25px;
-  font-family: var(--ff-xs);
+  font-family: var(--ff-primary);
 }
 
 body {
@@ -226,13 +225,15 @@ body {
   font-size: var(--font-size-xs);
   line-height: 1.5;
   color: hsl(var(--clr-black));
-  background-color: var(--clr-white);
+  background-color: hsl(var(--clr-light));
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
+span {
+  line-height: 1.25;
+}
 a {
   color: hsl(var(--clr-black));
   text-decoration: none;
@@ -240,7 +241,7 @@ a {
   font-family: var(--ff-primary);
   font-weight: 500;
   letter-spacing: 1.4px;
-  line-height: 24.5px;
+  line-height: 1;
 }
 input {
   font-size: var(--fs-td-number);
@@ -250,23 +251,22 @@ input {
 }
 
 .btn {
-  font-size: var(--fs-body);
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-tiny);
-  padding: var(--spacing-s-2) var(--spacing-s);
+  display: inline-block;
+  padding: 0.85em 1em;
   color: hsl(var(--clr-white));
-  border: 1px solid hsl(var(--clr-black));
-  background-color: hsl(var(--clr-black));
-  transition: opacity var(--animate-duration) ease-in-out var(--animate-delay),
-    background-color var(--animate-duration) ease-in-out var(--animate-delay),
-    color var(--animate-duration) ease-in-out var(--animate-delay);
-  letter-spacing: 1px;
-  line-height: 1.71;
-  cursor: pointer;
-  text-transform: uppercase;
+  background-color: hsl(var(--clr-purple));
+  opacity: 1;
+  border: none;
+  border-color: transparent;
+  border-radius: 2.6rem;
+  outline: 0;
   font-family: var(--ff-primary);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 0.11 0.22 rgba(0, 0, 0, 0.15);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 500px) {
@@ -281,6 +281,7 @@ input {
   padding: 0 var(--h-spacing);
 }
 section {
+  margin: var(--v-spacing) 0;
   padding: 0;
 }
 

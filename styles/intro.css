@@ -1,0 +1,17 @@
+.first-section {
+  margin-top: 5rem;
+}
+
+.intro-container {
+  margin: 0 auto;
+  text-align: center;
+}
+.intro-container > * {
+  margin: 0 auto;
+  margin-block: var(--spacing-xxs);
+}
+
+.intro-body {
+  color: hsl(var(--clr-grey));
+  font-size: var(--font-size-s);
+}

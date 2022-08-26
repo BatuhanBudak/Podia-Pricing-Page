@@ -1,0 +1,219 @@
+.pricing-table {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr repeat(7, 1fr);
+
+  row-gap: 1.5rem;
+  padding-inline: var(--spacing-xxs);
+  /* box-shadow: inset 0 0 0 0.055rem rgba(0, 0, 0, 0.2); */
+  border: 1px solid hsl(var(--clr-grey) / 0.2);
+  border-radius: 10px;
+}
+ul > li {
+  margin-bottom: 0.75rem;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+.pricing-table-container {
+  padding-inline: 0.2rem;
+  margin: 0 auto;
+}
+.type-price {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+.type-save {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+.type-save-desc {
+  font-size: var(--font-size-xs);
+}
+.table-header {
+  grid-column: span 10;
+  text-align: center;
+  margin-top: 0.5em;
+}
+.types-container {
+  grid-column: span 10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mover-type-container {
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+.shaker-type-container {
+  margin-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+.earth-type-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.mover-type-header {
+  color: hsl(var(--clr-blue));
+  font-weight: 700;
+}
+.shaker-type-header {
+  color: hsl(var(--clr-purple));
+  font-weight: 700;
+}
+.earth-type-header {
+  color: hsl(var(--clr-brown));
+  font-weight: 700;
+}
+
+.table-attribute {
+  grid-column: span 10;
+  text-align: center;
+  border-bottom: 1px solid hsl(var(--clr-black) / 0.5);
+}
+.pricing-container {
+  margin-bottom: 2rem;
+}
+.core-list,
+.sell-list,
+.market-list,
+.email-list,
+.extras-list {
+  grid-column: 1/4;
+  display: grid;
+  align-items: flex-start;
+}
+/* .core-list > li,
+.sell-list > li,
+.market-list > li,
+.email-list > li,
+.extras-list > li {
+  font-weight: 700;
+} */
+
+.core-mover-list,
+.sell-mover-list,
+.market-mover-list,
+.email-mover-list,
+.extras-mover-list {
+  grid-column: 4/6;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+}
+
+.core-shaker-list,
+.sell-shaker-list,
+.market-shaker-list,
+.email-shaker-list,
+.extras-shaker-list {
+  grid-column: 6/8;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+}
+
+.core-earthquake-list,
+.sell-earthquake-list,
+.market-earthquake-list,
+.email-earthquake-list,
+.extras-earthquake-list {
+  grid-column: 8/10;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+}
+
+.core-mover-list > li,
+.sell-mover-list > li,
+.market-mover-list > li,
+.email-mover-list > li,
+.extras-mover-list > li,
+.core-shaker-list > li,
+.sell-shaker-list > li,
+.market-shaker-list > li,
+.email-shaker-list > li,
+.extras-shaker-list > li,
+.core-earthquake-list > li,
+.sell-earthquake-list > li,
+.market-earthquake-list > li,
+.email-earthquake-list > li,
+.extras-earthquake-list > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mover-check,
+.shaker-check,
+.earthquake-check {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.mover-check {
+  background-color: hsl(var(--clr-blue) / 0.2);
+}
+.shaker-check {
+  background-color: hsl(var(--clr-purple) / 0.2);
+}
+.earthquake-check {
+  background-color: hsl(var(--clr-brown) / 0.2);
+}
+.mover-check::after {
+  content: url("../public/icons/green-check.svg");
+  display: block;
+}
+
+.earthquake-check::after {
+  content: url("../public/icons/brown-check.svg");
+  display: block;
+}
+.shaker-check::after {
+  content: url("../public/icons/purple-check.svg");
+  display: block;
+}
+.no-check {
+  min-width: 50px;
+  max-width: 8ch;
+  height: unset;
+  border-radius: 0;
+  position: static;
+  background-color: unset;
+  text-align: center;
+}
+.mover-check.no-check::after,
+.shaker-check.no-check::after,
+.earthquake-check.no-check::after {
+  content: unset;
+}
+
+.earth-badge,
+.mover-badge,
+.shaker-badge {
+  min-width: 90px;
+  border-radius: 10px;
+  padding-inline: 0.3em;
+}
+
+.mover-badge {
+  background-color: hsl(var(--clr-blue) / 0.2);
+  color: hsl(var(--clr-blue));
+}
+.shaker-badge {
+  background-color: hsl(var(--clr-purple) / 0.2);
+  color: hsl(var(--clr-purple));
+}
+
+.earth-badge {
+  background-color: hsl(var(--clr-brown) / 0.2);
+  color: hsl(var(--clr-brown));
+  border-radius: 10px;
+}

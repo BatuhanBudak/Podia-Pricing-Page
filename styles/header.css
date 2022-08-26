@@ -47,7 +47,6 @@
 
 .navigation {
   position: absolute;
-  transform: translateY(-100%);
   top: 0;
   left: 0;
 }
@@ -60,26 +59,25 @@
   max-height: 95vh;
   margin: var(--spacing-tiny);
   padding: var(--spacing-s) var(--spacing-m);
-  /* transform: translateY(-100%); */
+  transform: translateY(-110%);
   z-index: 0;
   opacity: 0;
   background-color: hsl(var(--clr-white));
   border: 0.0555555556rem solid #dfd8d3;
   border-radius: var(--spacing-tiny);
+  transition: opacity 0.2s ease;
   overflow-y: scroll;
 }
 
 .nav-open .navigation {
   width: 100%;
   height: 100%;
-  top: 0;
-  transform: translateY(0);
-  transition: opacity 0.2s ease;
   z-index: 11;
 }
 
 .nav-open .navigation-container {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .nav-top-bar {
