@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import FAQ from "../components/FAQ";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import PlanCard from "../components/PlanCard";
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <Intro />
       <PricingTable />
       <PlanCard />
+      <FAQ />
     </>
   );
 };

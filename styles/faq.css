@@ -1,0 +1,78 @@
+.faq-layout {
+  border-radius: 0.88rem;
+  display: grid;
+  align-items: center;
+  grid-column-gap: var(--spacing-m);
+  grid-row-gap: var(--spacing-l);
+  grid-template-columns: 100%;
+}
+.header-container {
+  grid-column: 1/-1;
+  max-width: 46rem;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+.header-container h2 {
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+}
+.faq-desc {
+  color: #5c5856;
+  margin-top: var(--spacing-tiny);
+  font-size: var(--font-size-xs);
+  letter-spacing: normal;
+}
+.faq-desc a {
+  font-size: var(--font-size-xs);
+  color: #5c5856;
+  text-decoration: underline;
+  letter-spacing: normal;
+}
+.accordion-button {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-xs) 0;
+  text-align: left;
+  transition: color 0.15s ease-in-out;
+  width: 100%;
+}
+.accordion-button > h3 {
+  font-weight: normal;
+  font-size: var(--font-size-xs);
+  letter-spacing: normal;
+  font-weight: 600;
+}
+.accordion-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.22rem;
+  height: 2.2rem;
+  min-height: 2.22rem;
+  min-width: 2.22rem;
+  margin-left: var(--spacing-m);
+  background-color: hsl(var(--clr-lbrown));
+  color: hsl(16, 12%, 56%);
+  border-radius: 100%;
+  transition: all 0.15s ease-in-out;
+}
+.accordion-button:hover,
+.accordion-button:focus,
+.accordion-button:target,
+.accordion-button:active {
+  color: hsl(var(--clr-purple));
+}
+
+.accordion-button:hover .accordion-icon,
+.accordion-button:focus .accordion-icon,
+.accordion-button:target .accordion-icon,
+.accordion-button:active .accordion-icon {
+  background-color: hsl(var(--clr-purple));
+}
