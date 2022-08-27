@@ -23,6 +23,7 @@ html {
   --clr-blue: 194 98% 32%;
   --clr-brown: 36 99% 33%;
   --clr-purple: 255 61% 42%;
+  --clr-lbrown: 24 33% 94%;
 
   /* font-families */
   --ff-primary: "Inter", sans-serif;
@@ -30,10 +31,11 @@ html {
 
   /* font-sizes */
   --font-size-xl: 3rem;
-  --font-size-l: 2.2rem;
+  --font-size-l: 2rem;
   --font-size-m: 1.75rem;
   --font-size-s: 1.45rem;
-  --font-size-xs: 1rem;
+  --font-size-xs: 1.25rem;
+  --font-size-xxs: 1rem;
   --font-size-xxs: 0.83rem;
   --font-size-tiny: 0.77rem;
   --font-size-menu: 0.6666rem;
@@ -64,10 +66,12 @@ html {
 
 @media (min-width: 26.3125em) {
   :root {
-    --font-size-xl: calc(50px + 14 * ((100vw - 421px) / 859));
-    --font-size-l: calc(34px + 10 * ((100vw - 421px) / 859));
-    --font-size-m: calc(22px + 10 * ((100vw - 421px) / 859));
-    --font-size-s: calc(20px + 2 * ((100vw - 421px) / 859));
+    --font-size-xl: 3.1rem;
+    --font-size-l: 2.1rem;
+    --font-size-m: 1.85rem;
+    --font-size-s: 1.55rem;
+    --font-size-xs: 1.3rem;
+    --font-size-xxs: 1.1rem;
     --font-size-menu: calc(12px + 6 * ((100vw - 421px) / 859));
   }
 }
@@ -81,26 +85,42 @@ html {
     --container-spacing-v-l: 2.44em;
     --container-spacing-h-l: 2.44em;
 
+    --font-size-xl: 3.2rem;
+    --font-size-l: 2.2rem;
+    --font-size-m: 1.95rem;
+    --font-size-s: 1.65rem;
+    --font-size-xs: 1.4rem;
+    --font-size-xxs: 1.2rem;
+
     --font-size-card-title: calc(15px + 5 * ((100vw - 769px) / 511));
     --font-size-card-button: calc(15px + 3 * ((100vw - 769px) / 511));
   }
 }
 @media (min-width: 64.0625em) {
   :root {
-    --h-spacing: 4.88em;
-    --container-spacing-v: 2.22em;
-    --container-spacing-h: 2.22em;
-    --container-spacing-v-l: 3.55em;
-    --container-spacing-h-l: 3.55em;
+    --h-spacing: 4.88rem;
+    --container-spacing-v: 2.22rem;
+    --container-spacing-h: 2.22rem;
+    --container-spacing-v-l: 3.55rem;
+    --container-spacing-h-l: 3.55rem;
+
+    --font-size-xl: 3.3rem;
+    --font-size-l: 2.3rem;
+    --font-size-m: 2.05rem;
+    --font-size-s: 1.75rem;
+    --font-size-xs: 1.5rem;
+    --font-size-xxs: 1.3rem;
   }
 }
 
 @media (min-width: 80em) {
   :root {
-    --font-size-xl: 3.55rem;
-    --font-size-l: 2.44rem;
-    --font-size-m: 1.77rem;
-    --font-size-s: 1.22rem;
+    --font-size-xl: 3.4rem;
+    --font-size-l: 2.4rem;
+    --font-size-m: 2.15rem;
+    --font-size-s: 1.85rem;
+    --font-size-xs: 1.6rem;
+    --font-size-xxs: 1.4rem;
     --font-size-card-title: 1.22rem;
     --font-size-menu: 1rem;
   }

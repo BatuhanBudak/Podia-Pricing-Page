@@ -13,7 +13,7 @@
   align-items: center;
   padding: var(--spacing-s) var(--spacing-m);
   position: relative;
-  background: transparent;
+  background-color: hsl(var(--clr-light));
 }
 .header-right-links-container {
   display: flex;
@@ -26,21 +26,24 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
-  position: relative;
 }
 .nav-toggle,
 .header-right-link {
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-xs);
   color: var(--clr-black);
   font-weight: 500;
 }
-
-.nav-toggle::after {
-  position: absolute;
+.menu-span {
+  position: relative;
   display: inline-block;
+}
+
+.menu-span::after {
+  position: absolute;
   content: url("../public/icons/arrow-down.svg");
   top: 50%;
   transform: translateY(-50%);
+  right: -40%;
   width: 24px;
   height: 24px;
 }
@@ -83,8 +86,7 @@
 .nav-top-bar {
   position: fixed;
   top: calc(var(--spacing-tiny) * 2);
-  /* left: calc(var(--spacing-m)+ var(--spacing-tiny));
-  right: calc(var(--spacing-m)+ var(--spacing-tiny)); */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,7 +121,7 @@
   margin-bottom: var(--spacing-s);
   width: 100%;
   font-family: var(--ff-secondary);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   font-weight: 500;
 }
 

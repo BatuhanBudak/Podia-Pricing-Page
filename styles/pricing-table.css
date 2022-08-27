@@ -9,10 +9,12 @@
   row-gap: 1.5rem;
   position: relative;
   padding-inline: var(--spacing-xxs);
+  padding-block: var(--spacing-s);
   border: 0;
   box-shadow: 0 0.1111111111rem 0.3333333333rem 0 rgba(0, 0, 0, 0.25);
   background-color: hsl(var(--clr-white));
   border-radius: 0.8rem;
+  letter-spacing: 1;
 }
 
 .pricing-table::before {
@@ -29,7 +31,7 @@
 
 ul > li {
   margin-bottom: 0.75rem;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xxs);
   font-weight: 600;
 }
 
@@ -38,11 +40,10 @@ ul > li {
   font-weight: 600;
 }
 .type-save {
-  font-size: var(--font-size-xs);
-  font-weight: 600;
+  font-size: var(--font-size-xxs);
 }
 .type-save-desc {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xxs);
 }
 .table-header {
   grid-column: span 10;
@@ -53,24 +54,16 @@ ul > li {
   grid-column: span 10;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
-.mover-type-container {
-  margin-right: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75em;
-}
-.shaker-type-container {
-  margin-right: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75em;
-}
+.mover-type-container,
+.shaker-type-container,
 .earth-type-container {
+  margin-right: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75em;
+  gap: 0.25em;
 }
 
 .mover-type-header {
@@ -90,7 +83,7 @@ ul > li {
   grid-column: span 10;
   text-align: center;
   border-bottom: 1px solid hsl(var(--clr-black) / 0.5);
-  padding-bottom: 0.5em;
+  padding-bottom: 0.1em;
 }
 .pricing-container {
   margin-bottom: 2rem;
@@ -156,6 +149,7 @@ ul > li {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: var(--font-size-tiny);
 }
 
 .mover-check,
@@ -210,7 +204,7 @@ ul > li {
 }
 
 .no-check {
-  min-width: 50px;
+  min-width: 80px;
   max-width: 8ch;
   height: unset;
   border-radius: 0;
@@ -227,9 +221,12 @@ ul > li {
 .earth-badge,
 .mover-badge,
 .shaker-badge {
-  min-width: 90px;
+  width: clamp(50px, 80px, 8ch);
+  min-width: unset;
   border-radius: 10px;
   padding-inline: 0.3em;
+  padding-block: 0.5em;
+  line-height: 1;
 }
 
 .mover-badge {
@@ -245,4 +242,20 @@ ul > li {
   background-color: hsl(var(--clr-brown) / 0.2);
   color: hsl(var(--clr-brown));
   border-radius: 10px;
+}
+
+.migrate {
+  grid-column: span 10;
+  background-color: hsl(var(--clr-lbrown));
+  text-align: center;
+  font-size: var(--font-size-xxs);
+  line-height: 2;
+  padding: 1.5em;
+  border-radius: 10px;
+}
+.migrate-link {
+  color: hsl(var(--clr-purple));
+  display: block;
+  line-height: 2;
+  text-decoration: underline;
 }

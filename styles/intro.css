@@ -15,3 +15,6 @@
   color: hsl(var(--clr-grey));
   font-size: var(--font-size-s);
 }
+.intro-link {
+  font-size: var(--font-size-xs);
+}

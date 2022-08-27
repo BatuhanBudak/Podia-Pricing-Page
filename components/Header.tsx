@@ -33,7 +33,7 @@ export default function Header() {
             onClick={toggleNav}
             aria-controls="navigation"
           >
-            Menu
+            <span className="menu-span">Menu</span>
           </button>
         </div>
         <Nav closeNav={closeNav} />

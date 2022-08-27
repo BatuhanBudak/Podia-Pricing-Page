@@ -11,19 +11,19 @@ export default function PricingTable() {
               <h3 className="mover-type-header mover">Mover</h3>
               <p className="type-price">$39/mo</p>
               <p className="type-save">$39/year</p>
-              <p className="type-save-desc">Save $78/yr</p>
+              <p className="type-save-desc">(Save $78/yr)</p>
             </div>
             <div className="shaker-type-container shaker">
               <h3 className="shaker-type-header">Shaker</h3>
               <p className="type-price">$79/mo</p>
               <p className="type-save">$39/year </p>
-              <p className="type-save-desc">Save $158/yr</p>
+              <p className="type-save-desc">(Save $158/yr)</p>
             </div>
             <div className="earth-type-container earthquake">
               <h3 className="earth-type-header">Quaker</h3>
               <p className="type-price">$179/mo</p>
               <p className="type-save">$1790/year</p>
-              <p className="type-save-desc">Save $358/yr</p>
+              <p className="type-save-desc">(Save $358/yr)</p>
             </div>
           </div>
           <h3 className="table-attribute">Core</h3>
@@ -335,6 +335,13 @@ export default function PricingTable() {
               <span className="earthquake-check no-check earth-badge">5</span>
             </li>
           </ul>
+          <p className="migrate">
+            We&apos;ll migrate your content and customers for free when you
+            choose an annual subscription.{" "}
+            <a href="" className="migrate-link">
+              Learn More
+            </a>
+          </p>
         </div>
       </div>
     </section>
