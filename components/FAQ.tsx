@@ -21,7 +21,7 @@ export default function FAQ() {
           <div className="header-container">
             <h2>Frequently Asked Questions</h2>
             <p className="faq-desc">
-              Don&apos;t see your answer?
+              Don&apos;t see your answer?{" "}
               <a href="">Reach out to us, we&apos;d love to help.</a>
             </p>
           </div>

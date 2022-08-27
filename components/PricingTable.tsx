@@ -284,7 +284,7 @@ export default function PricingTable() {
             <li>Monthly group creator call</li>
             <li>Team seats</li>
           </ul>
-          <ul className="sell-mover-list">
+          <ul className="extras-mover-list">
             <li>
               <span className="mover-check none"></span>
             </li>
@@ -301,7 +301,7 @@ export default function PricingTable() {
               <span className="mover-check none"></span>
             </li>
           </ul>
-          <ul className="sell-shaker-list">
+          <ul className="extras-shaker-list">
             <li>
               <span className="shaker-check none"></span>
             </li>
@@ -318,7 +318,7 @@ export default function PricingTable() {
               <span className="shaker-check none"></span>
             </li>
           </ul>
-          <ul className="sell-earthquake-list">
+          <ul className="extras-earthquake-list">
             <li>
               <span className="earthquake-check"></span>
             </li>

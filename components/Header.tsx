@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const windowWidth = useScreenSize();
-  const headerFirstBreakPoint = 550;
+  const breakPoint = 1000;
 
   function toggleNav() {
     setNavOpen((prev) => !prev);
@@ -37,6 +37,9 @@ export default function Header() {
           </button>
         </div>
         <Nav closeNav={closeNav} />
+        {windowWidth > breakPoint && (
+          <button className="trial-button">Start Free Trial</button>
+        )}
       </div>
     </header>
   );

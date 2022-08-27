@@ -2,10 +2,13 @@ import Image from "next/image";
 import React from "react";
 import useToggle from "../hooks/useToggle";
 import close from "../public/icons/close.svg";
+import useScreenSize from "../hooks/useScreenSize";
 
 export default function Nav({ closeNav }) {
   const [toggledFirst, toggleStateFirst] = useToggle();
   const [toggledSecond, toggleStateSecond] = useToggle();
+  const windowWidth = useScreenSize();
+  const breakPoint = 1000;
 
   return (
     <nav className="navigation" id="navigation">
@@ -21,7 +24,7 @@ export default function Nav({ closeNav }) {
             <li className="nav-list-item " onClick={toggleStateFirst}>
               <span className="has-content">Features</span>
               {toggledFirst && (
-                <>
+                <div className="nav-sublist-container">
                   <ul className="nav-sub-list">
                     <h4 className="nav-sub-list-header">SELL YOUR WORK</h4>
                     <li>
@@ -81,7 +84,7 @@ export default function Nav({ closeNav }) {
                   <a className="overview-link" href="">
                     Features Overview
                   </a>
-                </>
+                </div>
               )}
             </li>
             <li className="nav-list-item">
@@ -99,13 +102,11 @@ export default function Nav({ closeNav }) {
                 Demo
               </a>
             </li>
-            <li
-              className="nav-list-item has-content"
-              onClick={toggleStateSecond}
-            >
-              Resources
+            <li className="nav-list-item " onClick={toggleStateSecond}>
+              <span className="has-content">Resources</span>
+
               {toggledSecond && (
-                <>
+                <div className="nav-sublist-container">
                   <ul className="nav-sub-list">
                     <h4 className="nav-sub-list-header">RESOURCES</h4>
                     <li>
@@ -165,11 +166,13 @@ export default function Nav({ closeNav }) {
                   <a className="overview-link" href="">
                     Resource Center
                   </a>
-                </>
+                </div>
               )}
             </li>
           </ul>
-          <button className="trial-button">Start Free Trial</button>
+          {windowWidth <= breakPoint && (
+            <button className="trial-button">Start Free Trial</button>
+          )}
         </div>
       </div>
     </nav>
