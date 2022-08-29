@@ -28,7 +28,11 @@ export default function FAQ() {
           <div className="faq-questions-container">
             <ul className="faq-questions-list">
               <li className="faq-quesiton-list-item">
-                <button className="accordion-button" onClick={setFirstToggled}>
+                <button
+                  className="accordion-button"
+                  onClick={setFirstToggled}
+                  aria-expanded={firstToggled}
+                >
                   <h3>Can I cancel at any time?</h3>
                   <span className="accordion-icon">
                     {firstToggled && <Image src={minus} alt="" />}
@@ -44,7 +48,11 @@ export default function FAQ() {
                 )}
               </li>
               <li className="faq-quesiton-list-item">
-                <button className="accordion-button" onClick={setSecondToggled}>
+                <button
+                  className="accordion-button"
+                  onClick={setSecondToggled}
+                  aria-expanded={secondToggled}
+                >
                   <h3>Is it easy to change plans?</h3>
                   <span className="accordion-icon">
                     {secondToggled && <Image src={minus} alt="" />}
@@ -59,7 +67,11 @@ export default function FAQ() {
                 )}
               </li>
               <li className="faq-quesiton-list-item">
-                <button className="accordion-button" onClick={setThirdToggled}>
+                <button
+                  className="accordion-button"
+                  onClick={setThirdToggled}
+                  aria-expanded={thirdToggled}
+                >
                   <h3>Are there any credit card or Paypal fees?</h3>
                   <span className="accordion-icon">
                     {thirdToggled && <Image src={minus} alt="" />}
@@ -77,7 +89,11 @@ export default function FAQ() {
                 )}
               </li>
               <li className="faq-quesiton-list-item">
-                <button className="accordion-button" onClick={setFourthToggled}>
+                <button
+                  className="accordion-button"
+                  onClick={setFourthToggled}
+                  aria-expanded={fourthToggled}
+                >
                   <h3>Do I have to choose my plan first?</h3>
                   <span className="accordion-icon">
                     {fourthToggled && <Image src={minus} alt="" />}
@@ -93,7 +109,11 @@ export default function FAQ() {
                 )}
               </li>
               <li className="faq-quesiton-list-item">
-                <button className="accordion-button" onClick={setFifthToggled}>
+                <button
+                  className="accordion-button"
+                  onClick={setFifthToggled}
+                  aria-expanded={fifthToggled}
+                >
                   <h3> Can I have a refund?</h3>
                   <span className="accordion-icon">
                     {fifthToggled && <Image src={minus} alt="" />}
@@ -114,7 +134,11 @@ export default function FAQ() {
                 )}
               </li>
               <li className="faq-quesiton-list-item">
-                <button className="accordion-button" onClick={setSixthToggled}>
+                <button
+                  className="accordion-button"
+                  onClick={setSixthToggled}
+                  aria-expanded={sixthToggled}
+                >
                   <h3>How do I get my money?</h3>
                   <span className="accordion-icon">
                     {sixthToggled && <Image src={minus} alt="" />}
@@ -133,6 +157,7 @@ export default function FAQ() {
                 <button
                   className="accordion-button"
                   onClick={setSeventhToggled}
+                  aria-expanded={seventhToggled}
                 >
                   <h3> Do I need a credit card to sign up?</h3>
                   <span className="accordion-icon">
@@ -148,7 +173,11 @@ export default function FAQ() {
                 )}
               </li>
               <li className="faq-quesiton-list-item">
-                <button className="accordion-button" onClick={setEightToggled}>
+                <button
+                  className="accordion-button"
+                  onClick={setEightToggled}
+                  aria-expanded={eigthToggled}
+                >
                   <h3> Can I see a demo?</h3>
                   <span className="accordion-icon">
                     {eigthToggled && <Image src={minus} alt="" />}
@@ -165,7 +194,11 @@ export default function FAQ() {
                 )}
               </li>
               <li className="faq-quesiton-list-item">
-                <button className="accordion-button" onClick={setNinthToggled}>
+                <button
+                  className="accordion-button"
+                  onClick={setNinthToggled}
+                  aria-expanded={ninthToggled}
+                >
                   <h3> Is Podia safe and secure?</h3>
                   <span className="accordion-icon">
                     {ninthToggled && <Image src={minus} alt="" />}
