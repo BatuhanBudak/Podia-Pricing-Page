@@ -1,4 +1,7 @@
+import Image from "next/image";
 import React from "react";
+import info from "../public/icons/info.svg";
+import ReactTooltip from "react-tooltip";
 
 export default function PricingTable() {
   return (
@@ -29,12 +32,37 @@ export default function PricingTable() {
           <h3 className="table-attribute">Core</h3>
 
           <ul className="core-list">
-            <li>Unlimited everything</li>
-            <li>Zero transaction fees</li>
-            <li>Free migrations</li>
-            <li>7-days-a-week support</li>
+            <li>
+              <p>Unlimited everything</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
+            <li>
+              <p>Zero transaction fees</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
+            <li>
+              <p>Free migrations</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
+            <li>
+              <p>7-days-a-week support</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
             <li>Daily live Q{"&"}As</li>
-            <li>Additional teammates</li>
+            <li>
+              <p>Additional teammates</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
           </ul>
           <ul className="core-mover-list">
             <li>
@@ -108,9 +136,19 @@ export default function PricingTable() {
           <ul className="sell-list">
             <li>Sell online courses</li>
             <li>Sell digital downloads</li>
-            <li>Sell webinars</li>
+            <li>
+              <p>Sell webinars</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
             <li>Sell memberships</li>
-            <li>Sell coaching</li>
+            <li>
+              <p>Sell coaching</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
           </ul>
           <ul className="sell-mover-list">
             <li>
@@ -167,11 +205,21 @@ export default function PricingTable() {
           <h3 className="table-attribute">Market</h3>
 
           <ul className="market-list">
-            <li>Custom website</li>
+            <li>
+              <p>Custom website</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
             <li>Customer messaging</li>
             <li>Product bundles</li>
             <li>Course certificates</li>
-            <li>Embedded checkout</li>
+            <li>
+              <p>Embedded checkout</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
             <li>Third-party code</li>
           </ul>
           <ul className="market-mover-list">
@@ -248,7 +296,12 @@ export default function PricingTable() {
 
           <ul className="email-list">
             <li>Unlimited email subscribers</li>
-            <li>Monthly email recipients</li>
+            <li>
+              <p>Monthly email recipients</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
           </ul>
           <ul className="email-mover-list">
             <li>
@@ -278,10 +331,30 @@ export default function PricingTable() {
           <h3 className="table-attribute">Extras</h3>
 
           <ul className="extras-list">
-            <li>White labeled website</li>
-            <li>Dedicated account manager</li>
-            <li>Personalized onboarding call</li>
-            <li>Monthly group creator call</li>
+            <li>
+              <p>White labeled website</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
+            <li>
+              <p>Dedicated account manager</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
+            <li>
+              <p>Personalized onboarding call</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
+            <li>
+              <p>Monthly group creator call</p>
+              <button className="info-button">
+                <Image src={info} alt="" />
+              </button>
+            </li>
             <li>Team seats</li>
           </ul>
           <ul className="extras-mover-list">

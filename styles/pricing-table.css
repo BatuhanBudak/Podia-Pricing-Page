@@ -43,7 +43,45 @@
   margin-bottom: 0.75rem;
   font-size: var(--font-size-xxs);
   font-weight: 600;
+  letter-spacing: normal;
 }
+.pricing-table ul > li > p {
+  font-size: var(--font-size-xxs);
+  font-weight: 600;
+}
+
+.info-button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  flex: 0;
+}
+
+.info-button > span {
+  min-width: 20px;
+}
+.info-button::after {
+  display: none;
+  position: absolute;
+  content: "Migrations are free with any annual plan";
+  top: 0;
+  left: -200%;
+  transform: translate(0, -100%);
+  width: max-content;
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-black));
+  border: 1px solid hsl(var(--clr-black));
+  border-radius: 10px;
+  z-index: 50;
+  font-size: var(--font-size-tiny);
+}
+
+.info-button:hover::after,
+.info-button:focus::after {
+  display: block;
+}
+
 @media screen and (min-width: 75em) {
   .pricing-table ul > li {
     margin-bottom: 0.75rem;
@@ -157,6 +195,15 @@
   grid-column: 1/4;
   display: grid;
   align-items: flex-start;
+}
+
+.core-list > li,
+.sell-list > li,
+.market-list > li,
+.email-list > li,
+.extras-list > li {
+  display: flex;
+  align-items: center;
 }
 
 .core-mover-list,

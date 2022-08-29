@@ -6,7 +6,7 @@
   grid-row-gap: var(--spacing-l);
   grid-template-columns: 100%;
   background-color: hsl(var(--clr-lbrown));
-  padding: var(--container-spacing-v) var(--container-spacing-h);
+  padding: var(--container-spacing-v) var(--spacing-xs);
 }
 
 .iframe {
@@ -28,6 +28,7 @@
   margin-bottom: 0.22rem;
   line-height: 1.45;
   letter-spacing: -0.01em;
+  font-size: var(--font-size-xs);
 }
 
 .plan-details-list {
@@ -41,7 +42,7 @@
 .plan-details-list-item {
   margin-bottom: var(--spacing-s);
   position: relative;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-xxs);
   color: #5c5856;
   font-weight: 500;
   letter-spacing: normal;
@@ -62,4 +63,14 @@
   background-size: 1rem;
   border-radius: 100%;
   color: hsl(16, 12%, 56%);
+}
+
+@media screen and (min-width: 75em) {
+  .plan-card-layout {
+    grid-template-columns: 60% minmax(0, 1fr);
+  }
+
+  .plan-details-title {
+    font-size: var(--font-size-m);
+  }
 }

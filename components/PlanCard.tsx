@@ -1,6 +1,6 @@
 export default function PlanCard() {
   return (
-    <section>
+    <section className="plan-card-section">
       <div className="container">
         <div className="plan-card-layout">
           <div className="iframe-container">
