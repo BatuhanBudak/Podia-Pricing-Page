@@ -4,7 +4,7 @@ import useToggle from "../hooks/useToggle";
 import close from "../public/icons/close.svg";
 import useScreenSize from "../hooks/useScreenSize";
 
-export default function Nav({ closeNav }) {
+export default function Nav({ closeNav }: { closeNav: () => void }) {
   const [toggledFirst, toggleStateFirst] = useToggle();
   const [toggledSecond, toggleStateSecond] = useToggle();
   const windowWidth = useScreenSize();
@@ -170,7 +170,7 @@ export default function Nav({ closeNav }) {
               )}
             </li>
           </ul>
-          {windowWidth <= breakPoint && (
+          {windowWidth! <= breakPoint && (
             <button className="trial-button">Start Free Trial</button>
           )}
         </div>

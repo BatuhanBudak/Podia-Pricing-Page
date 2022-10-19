@@ -21,7 +21,7 @@ export default function Footer() {
           <li className="footer-main-list-item" onClick={setFirstToggled}>
             <div className="footer-main-list-block">
               Sell
-              {windowWidth <= footerBreakPoint && firstToggled && (
+              {windowWidth! <= footerBreakPoint && firstToggled && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Online courses</a>
@@ -40,7 +40,7 @@ export default function Footer() {
                   </li>
                 </ul>
               )}
-              {windowWidth > footerBreakPoint && (
+              {windowWidth! > footerBreakPoint && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Online courses</a>
@@ -60,7 +60,7 @@ export default function Footer() {
                 </ul>
               )}
             </div>
-            {windowWidth <= footerBreakPoint && (
+            {windowWidth! <= footerBreakPoint && (
               <span
                 className={`footer-main-list-item-icon ${
                   firstToggled ? "up" : ""
@@ -73,7 +73,7 @@ export default function Footer() {
           <li className="footer-main-list-item" onClick={setSecondToggled}>
             <div className="footer-main-list-block">
               Market
-              {windowWidth <= footerBreakPoint && secondToggled && (
+              {windowWidth! <= footerBreakPoint && secondToggled && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Email marketing</a>
@@ -92,7 +92,7 @@ export default function Footer() {
                   </li>
                 </ul>
               )}
-              {windowWidth > footerBreakPoint && (
+              {windowWidth! > footerBreakPoint && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Email marketing</a>
@@ -112,7 +112,7 @@ export default function Footer() {
                 </ul>
               )}
             </div>
-            {windowWidth <= footerBreakPoint && (
+            {windowWidth! <= footerBreakPoint && (
               <span
                 className={`footer-main-list-item-icon ${
                   secondToggled ? "up" : ""
@@ -125,7 +125,7 @@ export default function Footer() {
           <li className="footer-main-list-item" onClick={setThirdToggled}>
             <div className="footer-main-list-block">
               Compare
-              {windowWidth <= footerBreakPoint && thirdToggled && (
+              {windowWidth! <= footerBreakPoint && thirdToggled && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Kajabi</a>
@@ -144,7 +144,7 @@ export default function Footer() {
                   </li>
                 </ul>
               )}
-              {windowWidth > footerBreakPoint && (
+              {windowWidth! > footerBreakPoint && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Kajabi</a>
@@ -164,7 +164,7 @@ export default function Footer() {
                 </ul>
               )}
             </div>
-            {windowWidth <= footerBreakPoint && (
+            {windowWidth! <= footerBreakPoint && (
               <span
                 className={`footer-main-list-item-icon ${
                   thirdToggled ? "up" : ""
@@ -177,7 +177,7 @@ export default function Footer() {
           <li className="footer-main-list-item" onClick={setFourthToggled}>
             <div className="footer-main-list-block">
               Resources
-              {windowWidth <= footerBreakPoint && fourthToggled && (
+              {windowWidth! <= footerBreakPoint && fourthToggled && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Blog</a>
@@ -205,7 +205,7 @@ export default function Footer() {
                   </li>
                 </ul>
               )}
-              {windowWidth > footerBreakPoint && (
+              {windowWidth! > footerBreakPoint && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Blog</a>
@@ -234,7 +234,7 @@ export default function Footer() {
                 </ul>
               )}
             </div>
-            {windowWidth <= footerBreakPoint && (
+            {windowWidth! <= footerBreakPoint && (
               <span
                 className={`footer-main-list-item-icon ${
                   fourthToggled ? "up" : ""
@@ -247,7 +247,7 @@ export default function Footer() {
           <li className="footer-main-list-item" onClick={setFifthToggled}>
             <div className="footer-main-list-block">
               Podia
-              {windowWidth <= footerBreakPoint && fifthToggled && (
+              {windowWidth! <= footerBreakPoint && fifthToggled && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Examples</a>
@@ -272,7 +272,7 @@ export default function Footer() {
                   </li>
                 </ul>
               )}
-              {windowWidth > footerBreakPoint && (
+              {windowWidth! > footerBreakPoint && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Examples</a>
@@ -298,7 +298,7 @@ export default function Footer() {
                 </ul>
               )}
             </div>
-            {windowWidth <= footerBreakPoint && (
+            {windowWidth! <= footerBreakPoint && (
               <span
                 className={`footer-main-list-item-icon ${
                   fifthToggled ? "up" : ""
@@ -311,7 +311,7 @@ export default function Footer() {
           <li className="footer-main-list-item" onClick={setSixthToggled}>
             <div className="footer-main-list-block">
               Support
-              {windowWidth <= footerBreakPoint && sixthToggled && (
+              {windowWidth! <= footerBreakPoint && sixthToggled && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Weekly Demo</a>
@@ -327,7 +327,7 @@ export default function Footer() {
                   </li>
                 </ul>
               )}
-              {windowWidth > footerBreakPoint && (
+              {windowWidth! > footerBreakPoint && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Weekly Demo</a>
@@ -344,7 +344,7 @@ export default function Footer() {
                 </ul>
               )}
             </div>
-            {windowWidth <= footerBreakPoint && (
+            {windowWidth! <= footerBreakPoint && (
               <span
                 className={`footer-main-list-item-icon ${
                   sixthToggled ? "up" : ""
@@ -357,7 +357,7 @@ export default function Footer() {
           <li className="footer-main-list-item" onClick={setSeventhToggled}>
             <div className="footer-main-list-block">
               Social
-              {windowWidth <= footerBreakPoint && fourthToggled && (
+              {windowWidth! <= footerBreakPoint && fourthToggled && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Twitter</a>
@@ -370,7 +370,7 @@ export default function Footer() {
                   </li>
                 </ul>
               )}
-              {windowWidth > footerBreakPoint && (
+              {windowWidth! > footerBreakPoint && (
                 <ul className="footer-sub-list">
                   <li className="footer-sublist-item">
                     <a className="footer-sublist-link">Twitter</a>
@@ -384,7 +384,7 @@ export default function Footer() {
                 </ul>
               )}
             </div>
-            {windowWidth <= footerBreakPoint && (
+            {windowWidth! <= footerBreakPoint && (
               <span
                 className={`footer-main-list-item-icon ${
                   seventhToggled ? "up" : ""

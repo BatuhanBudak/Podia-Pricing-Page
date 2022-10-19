@@ -37,7 +37,7 @@ export default function Header() {
           </button>
         </div>
         <Nav closeNav={closeNav} />
-        {windowWidth > breakPoint && (
+        {windowWidth! > breakPoint && (
           <button className="trial-button">Start Free Trial</button>
         )}
       </div>
