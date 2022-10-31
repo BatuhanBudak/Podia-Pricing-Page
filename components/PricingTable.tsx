@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import info from "../public/icons/info.svg";
-import ReactTooltip from "react-tooltip";
 
 export default function PricingTable() {
   return (
